@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index2.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <ul class="ul-top">
+        <li><img src="./img/logo1.png" alt="logo" style="width:80px;height:80px;"></li>
+        <div class="tw">TEA WHY CAFE 
+         <img src="./img/cat03.png" alt="" style="width:50px;height:50px;">
+         <img src="./img/cat04.png" alt="" style="width:50px;height:50px;">
+         <img src="./img/cat02.png" alt="" style="width:50px;height:50px;">
+         <img src="./img/cat01.png" alt="" style="width:50px;height:50px;">
+         <img src="./img/paw.png" alt="" style="width:110px;height:50px;">
+        
+         </div>      
+    </ul>     
+    <ul class="ul-top">
+        <li><a href="home.html">Home</a></li>
+        <li class="dropdown">
+           <a href="afnb.html">Food & Beverage</a>
+           <div class="dropdown-content">
+            <a href="menu.html">OUR MENU</a>
+            <a href="features.html">OUR FEATURES</a>
+           </div>
+        </li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="findus.html">Find us</a></li>
+        <li><a href="aboutus.html">About us</a></li> 
+        <li><a href="help.html">Help</a></li>
+        <li><a class="active" href="signlogin.html">Sign in / Log in</a></li>
+    </ul>
+
+    <div class="signlogin">
+    <div class="container right-panel-active">
+        <!-- Sign In -->
+        <div class="container__form container--signup">
+          <form action="#" class="form" id="form1">
+            <h2 class="form__title">Sign in</h2>
+            <input type="text" placeholder="User" class="input" id="userName" >
+            <input type="email" placeholder="Email" class="input" id="userEmail" >
+            <input type="password" placeholder="Password" class="input" id="userPwd" >
+            <button class="btn">Sign In</button>
+          </form>
+        </div>
+    
+        <!-- Log in -->
+        <div class="container__form container--signin">
+          <form action="#" class="form" id="form2">
+            <h2 class="form__title">Log in</h2>
+            <input type="email" placeholder="Email" class="input" id="userEmail1"/>
+            <input type="password" placeholder="Password" class="input" id="userPwd1" />
+            <a href="#" class="link">Forgot your password?</a>
+            <button class="btn" onclick="tz()">Log In</button>
+          </form>
+        </div>
+    
+        <!-- Overlay -->
+        <div class="container__overlay">
+          <div class="overlay">
+            <div class="overlay__panel overlay--left">
+              <button class="btn" id="logIn">Log In</button>
+            </div>
+            <div class="overlay__panel overlay--right">
+              <button class="btn" id="signIn">Sign in</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./js/login.js"></script>
+    </div>
+</body>
+
+
+</html>
